@@ -7,29 +7,31 @@ import TodoList from './components/TodoList';
 function App() {
   const [todos, setTodos] = useState([]);
 
-  useEffect(() => {
-    getTodos()
-    },[])
   
-  
-    useEffect(() => {
-    saveTodos()
-    },[todos])
-  
-  
-    const saveTodos = () => {
-         localStorage.setItem('todos',JSON.stringify(todos));
-    }
-    const getTodos = () => {
-    if(localStorage.getItem('todos') === null){
-         localStorage.setItem('todos',JSON.stringify([]));
-    } else {
-         let localTodos = JSON.parse(localStorage.getItem('todos'));
-         setTodos(localTodos);
-    }
-    }
-  
+      useEffect(() => {
+      getTodos()
+      },[])
+    
+    
+      useEffect(() => {
+      saveTodos()
+      },[todos])
+    
+    
+      const saveTodos = () => {
+          localStorage.setItem('todos',JSON.stringify(todos))
+      }
 
+      const getTodos = () => {
+        if(localStorage.getItem('todos') === null){
+            localStorage.setItem('todos',JSON.stringify([]))
+        } else {
+            let localTodos = JSON.parse(localStorage.getItem('todos'))
+            setTodos(localTodos)
+        }
+      }
+   
+ 
   return (
     <>
       <Router>
