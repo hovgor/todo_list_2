@@ -47,7 +47,7 @@ function TodoDetails(props) {
     <div className=''>
     {filtered.map(item => {
       return(
-        <div className=''>
+        <div className='link-block'>
         {toggle && item.id === editId ? (
           <div className='actions'>
           <form onSubmit={() => submitEdit(item.id)} >
@@ -77,7 +77,9 @@ function TodoDetails(props) {
         </div>
       )
     })}
-    {date}
+      <div className='date-link-block'>
+        {date}
+      </div>
     </div>
   )
 }

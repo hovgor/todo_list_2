@@ -9,7 +9,7 @@ function Todo(props) {
     <div className='app'>
      <Link to={`/todos/${date}`}>{date}
      </Link> 
-     {' --- '+filtered.length}
+     {' - '+filtered.length}
     </div>
   )
 }
