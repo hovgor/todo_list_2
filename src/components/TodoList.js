@@ -8,17 +8,13 @@ function TodoList({todos,setTodos}) {
     date: ''
   })
   const [filtered,setFiltered] = useState([])
-  useEffect(() => {
-    setFiltered(todos)
-  },[filtered])
   const handleChange = (event) => {
     setValue({
       ...value,
       [event.target.name]: event.target.value
     })
   }  
- 
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     const newObj = {
@@ -26,16 +22,17 @@ function TodoList({todos,setTodos}) {
       id: uuidv4(),
       completed: false
     }
-  
+    
     const arr = [...todos, newObj];
- 
-     let filteredArr = arr.filter((item,index,self) => self.findIndex(v => {return v.date === item.date}) === index);
-
-     setTodos(arr);
-
-    return setFiltered(filteredArr);
+    
+    
+    setTodos(arr);
   }
-
+  useEffect(() => {
+    let filteredArr = [...todos].filter((item,index,self) => self.findIndex(v => {return v.date === item.date}) === index);
+    setFiltered(filteredArr)
+  },[filtered])
+  
   return (
     <>
      <dev className="App">
@@ -50,7 +47,7 @@ function TodoList({todos,setTodos}) {
               
               return (
                 <div key={todo.id}>
-                  <Todo {...todo} todos={todos}  />
+                  <Todo {...todo} todos={todos} id={todo.id} date={todo.date} />
                 </div>
               )
             })}
