@@ -1,7 +1,11 @@
 .App {
-    text-align: center;
-    font-size: 30px;
-   
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(78, 48, 48); 
   }
   
   .App-logo {

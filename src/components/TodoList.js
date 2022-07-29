@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Todo from './Todo';
 
@@ -8,8 +8,9 @@ function TodoList({todos,setTodos}) {
     date: ''
   })
   const [filtered,setFiltered] = useState([])
- 
-
+  useEffect(() => {
+    setFiltered(todos)
+  },[filtered])
   const handleChange = (event) => {
     setValue({
       ...value,

@@ -27,8 +27,6 @@ function TodoDetails(props) {
       }))
   }
   
-
-
     const submitEdit = (id) =>{
       const newTodos = [...todos].map(el => {
         if(el.id === id){
