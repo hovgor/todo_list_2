@@ -37,7 +37,7 @@ function TodoList({todos,setTodos}) {
   return (
     <>
      <dev className="App">
-        <h1>Todo List</h1>
+        <h1 className='todoList'>Todo List</h1>
           <form className='formClass' onSubmit={handleSubmit}>
             <p>New Task</p>
             <input className='inputs' required placeholder='Type here' name='title' type="text"  value={value.title} onChange={handleChange} />

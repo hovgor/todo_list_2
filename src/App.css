@@ -54,21 +54,25 @@
     width: 88px;
     height: auto;
     background: #3A85F7;
-    border-radius: 8px;
-    height: 24px;
-    left: 500px;
+    border-radius: 16px;
+    height: 40px;
+    left: 550px;
     top: auto;
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 24px;
     display: flex;
+    margin: -15px;
+    padding: 13px 20px 13px 20px;
     align-items: center;
-    text-align: center;
     color: #FFFFFF;
-    /* border: 2px solid black; */
-  }
+}
+
+.App button:hover{
+  color: #3A85F7;
+  background-color: #F2F2F7;
+  transition: 1.3s;
+}
 
   .inputs {
     position: relative;
@@ -154,16 +158,80 @@ color: #2B2B2B;
 
 .editButton{
   color: #3A85F7;
+  border-radius: 5px;
+  width: 80px;
 }
 
 .deleteButton{
   color: red;
+  border-radius: 5px;
+  width: 80px;
 }
 
 .cancelButton{
   color: #2B2B2B;
+  border-radius: 5px;
+  width: 80px;
 }
 
 .saveButton{
   color: aqua;
+  border-radius: 5px;
+  width: 80px;
+}
+
+
+.saveButton:hover {
+  transition: 2.3s;
+  color: rgb(165, 213, 245);
+  text-shadow: #ffffff;
+  background-color: rgb(119, 119, 87);
+  border: 1px solid black;
+}
+
+.cancelButton:hover{ 
+  transition: 2.3s;
+  color: #FFFFFF;
+  background-color: rgb(71, 110, 78);
+  border: 1px solid black;
+}
+
+.deleteButton:hover{
+  transition: 2.3s;
+  color: rgb(250, 0, 0);
+  background-color: rgb(231, 209, 5);
+  border: 1px solid black;
+}
+
+.editButton:hover{
+  transition: 2.3s;
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 206, 44);
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+@keyframes example {
+  0%   {background-color:rgb(228, 228, 228); left:0px; top:0px;}
+  25%  {background-color:rgb(241, 241, 241); left:5px; top:0px;}
+  50%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+  75%  {background-color:rgb(241, 241, 241); left:5px; top:0px;}
+  100% {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.todoList{
+  width: 100px;
+  height: auto;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 20;
 }
