@@ -50,8 +50,8 @@ function TodoDetails(props) {
           <div className='actions'>
           <form onSubmit={() => submitEdit(item.id)} >
           <input type='text' onChange={(e) => setEditText(e.target.value)} value={editText}/>
-          <button type='submit'>save</button>
-          <button onClick={() => {
+          <button className='saveButton' type='submit'>save</button>
+          <button className='cancelButton' onClick={() => {
             setEditText('')
             setToggle(false)
             setEditId(null)
@@ -62,8 +62,8 @@ function TodoDetails(props) {
                 <div className=''>
                   <h1 style={{textDecoration: `${item.completed ? "line-through": "none" }`}} key={item.id}>{item.title}</h1>
                   <input type='checkbox' className='' onChange={() => handleComplete(item.id)} />
-                  <button className='' onClick={()=> submitDelete(item.id)}>delete</button>
-                  <button className='' onClick={() => {
+                  <button className='deleteButton' onClick={()=> submitDelete(item.id)}>delete</button>
+                  <button className='editButton' onClick={() => {
                       setToggle(true)
                       setEditId(item.id)
                       setEditText(item.title)

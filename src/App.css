@@ -94,23 +94,76 @@
     width: 35%;
     height: auto;
     left: 32%;
-    top: 20%;
+    top: 10%;
     background-color: white;
     border-radius: 8px;
     border: 3px solid white;
   }
 
 
-  .actions{
-    display: flex;
-    gap: 1rem;
+  .link-block {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    background: #F2F2F7;
+    border-radius: 15px;
+    margin: 50px 50px 20px 25px;
 }
 
-.actions button{
+
+.link-block  button{
     border:none;
     outline:none;
     background: none;
     font-size: 16px;
     cursor: pointer;
-    border: 5px solid red;
+    background-color: #ffffff;
+    /* border: 1px solid rgb(10, 10, 10); */
+    margin: 10px 501px 10px 110px;
+    margin-left: 442px;  
+  }
+
+
+.date-link-block {
+
+position: relative;
+width: 205px;
+height: 24px;
+left: 551px;
+top: 100px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+display: flex;
+align-items: center;
+
+/* Black 2B */
+
+color: #2B2B2B;
+
+}
+
+
+
+.editButton{
+  color: #3A85F7;
+}
+
+.deleteButton{
+  color: red;
+}
+
+.cancelButton{
+  color: #2B2B2B;
+}
+
+.saveButton{
+  color: aqua;
 }
