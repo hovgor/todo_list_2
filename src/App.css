@@ -1,53 +1,116 @@
+*{
+  background-color: #F2F2F7;
+}
 .App {
-    text-align: center;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(78, 48, 48); 
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 9s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  position: absolute;
+  width: 662px;
+  height: 448px;
+  left: 500px;
+  top: 226px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 2px solid white;
+    
   }
 
-  .link-block{
-    text-align: center;
-  }
-
-  .date-link-block{
+  .formClass {
     position: relative;
-    text-align: right; 
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    background: #F2F2F7;
+    border-radius: 8px;
+    /* border: 1px solid yellow; */
   }
+
+  .app{
+    left: 29.79%;
+    right: 29.79%;
+    top: 52.67%;
+    bottom: 42%;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 4px;
+    /* border: 2px solid black; */
+  }
+
+  .App h1 {
+    position: relative;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: left;
+    color: #2B2B2B;
+    /* border: 2px solid red; */
+
+  }
+  
+  .App button {
+    position: relative;
+    width: 88px;
+    height: auto;
+    background: #3A85F7;
+    border-radius: 8px;
+    height: 24px;
+    left: 500px;
+    top: auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    /* border: 2px solid black; */
+  }
+
+  .inputs {
+    position: relative;
+    left: 15.79%;
+    right: 49.38%;
+    top: 50.44%;
+    bottom: 56.22%;
+    background: #FFFFFF;
+    border-radius: 4px;
+    /* border: 2px solid black; */
+  }
+  
+
+  .todos{
+    position: relative;
+    text-align: left;
+    left: auto;
+    /* border: 2px solid red; */
+  }
+
+  .todoDate {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    left: 32%;
+    top: 20%;
+    background-color: white;
+    border-radius: 8px;
+    border: 3px solid white;
+  }
+
+
+  .actions{
+    display: flex;
+    gap: 1rem;
+}
+
+.actions button{
+    border:none;
+    outline:none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 5px solid red;
+}

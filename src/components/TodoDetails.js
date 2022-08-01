@@ -1,6 +1,6 @@
- import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import '../App.css';
 function TodoDetails(props) {
     const {todos, setTodos} = props;
     const [toggle, setToggle] = useState(false);
@@ -42,7 +42,7 @@ function TodoDetails(props) {
     }
 
     return (
-    <div className=''>
+    <div className='todoDate'>
     {filtered.map(item => {
       return(
         <div className='link-block'>
