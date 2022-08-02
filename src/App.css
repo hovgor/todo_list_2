@@ -1,4 +1,13 @@
-*{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+/* *{
   background-color: #F2F2F7;
 }
 .App {
@@ -21,7 +30,7 @@
     top: auto;
     background: #F2F2F7;
     border-radius: 8px;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
   }
 
   .app{
@@ -32,7 +41,7 @@
     text-align: center;
     background: #FFFFFF;
     border-radius: 4px;
-    /* border: 2px solid black; */
+    border: 2px solid black;
   }
 
   .App h1 {
@@ -45,7 +54,7 @@
     display: flex;
     align-items: left;
     color: #2B2B2B;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 
   }
   
@@ -82,7 +91,6 @@
     bottom: 56.22%;
     background: #FFFFFF;
     border-radius: 4px;
-    /* border: 2px solid black; */
   }
   
 
@@ -90,7 +98,6 @@
     position: relative;
     text-align: left;
     left: auto;
-    /* border: 2px solid red; */
   }
 
   .todoDate {
@@ -124,7 +131,6 @@
     font-size: 16px;
     cursor: pointer;
     background-color: #ffffff;
-    /* border: 1px solid rgb(10, 10, 10); */
     margin: 10px 501px 10px 110px;
     margin-left: 442px;  
   }
@@ -143,12 +149,11 @@ font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 32px;
-/* or 133% */
 
 display: flex;
 align-items: center;
 
-/* Black 2B */
+
 
 color: #2B2B2B;
 
@@ -225,7 +230,6 @@ color: #2B2B2B;
   100% {background-color:rgb(255, 255, 255); left:0px; top:0px;}
 }
 
-/* The element to apply the animation to */
 .todoList{
   width: 100px;
   height: auto;
@@ -235,3 +239,11 @@ color: #2B2B2B;
   animation-duration: 4s;
   animation-iteration-count: 20;
 }
+
+
+.inputs{
+  width: 170px;
+  height: 30px;
+  margin: 5px;
+  font-size: large;
+} */
