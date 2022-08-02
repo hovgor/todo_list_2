@@ -41,7 +41,9 @@ function TodoList({ todos, setTodos }) {
   return (
     <>
       <dev className="mt-1 border-b border-gray-300 focus-within:border-indigo-600">
-      <h2 className="flex justify-center font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">Todo List</h2>
+        <h2 className="flex justify-center font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600">
+          Todo List
+        </h2>
         <form
           className="mt-1 border-gray-300 focus-within:border-indigo-600"
           onSubmit={handleSubmit}
@@ -105,7 +107,9 @@ function TodoList({ todos, setTodos }) {
           </div>
         </form>
         <div className="todos">
-        <h4 className="flex justify-center font-medium leading-tight text-2xl mt-10 mb-2 text-blue-500">Dates</h4>
+          <h4 className="flex justify-center font-medium leading-tight text-2xl mt-10 mb-2 text-blue-500">
+            Dates
+          </h4>
           {filtered.map((todo) => {
             return (
               <div key={todo.id}>
